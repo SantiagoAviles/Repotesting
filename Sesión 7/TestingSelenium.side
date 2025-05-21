@@ -1,0 +1,205 @@
+{
+  "id": "009146cd-a1c9-4ebf-b2f9-2a9c98fe42f9",
+  "version": "2.0",
+  "name": "TestingSelenium",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "31ea8b30-b181-4cf4-b5be-f7378f70bb21",
+    "name": "Busqueda_Google",
+    "commands": [{
+      "id": "fb33d2b6-8143-453f-9dc4-3d7efc4f0f62",
+      "comment": "",
+      "command": "open",
+      "target": "\thttps://www.google.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd1edb08-e60b-457e-93fd-c94ceb56631d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [],
+      "value": "Selenium IDE"
+    }, {
+      "id": "84a733f9-4f70-482a-96c9-0f8d5b33fc69",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "304c7018-e394-4576-ad35-28dacc263171",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=(//h3)",
+      "targets": [],
+      "value": "Selenium IDE"
+    }]
+  }, {
+    "id": "0dea0d80-9e07-4a0f-b655-7961bdb6d827",
+    "name": "Busqueda_Amazon",
+    "commands": [{
+      "id": "c5e5688c-520a-49bc-a98d-21fa8b1f56dc",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59c2a5e8-47a9-485d-a6ad-ed1011090b61",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "663x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35977ab8-e34a-4841-a6ca-7e7a6cb0f290",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "amazon"
+    }, {
+      "id": "2fcd4690-5e71-4501-a6af-45ec7116f07c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jZ2SBf > .wM6W7d > span",
+      "targets": [
+        ["css=#jZ2SBf > .wM6W7d > span", "css:finder"],
+        ["xpath=//div[@id='jZ2SBf']/div/span", "xpath:idRelative"],
+        ["xpath=//li/div/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Amazon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc6dcc5-3456-4be5-9fd8-95183375de2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.eKjLze .LC20lb",
+      "targets": [
+        ["css=.eKjLze .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/div/div/span/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Amazon.com en espanol. Gasta menos. Sonríe más.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df3edf80-5ff6-4add-a126-7ae3df39e509",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f74c0a1-6e9a-4e1c-a9fd-8f22eaeea268",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "laptop"
+    }, {
+      "id": "48ba9601-6eff-4f38-8170-33e730dbbb72",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e3decb91-d4d8-4b96-97aa-08feb6af87f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=a-autoid-3-announce",
+      "targets": [
+        ["id=a-autoid-3-announce", "id"],
+        ["css=#a-autoid-3-announce", "css:finder"],
+        ["xpath=//button[@id='a-autoid-3-announce']", "xpath:attributes"],
+        ["xpath=//span[@id='a-autoid-3']/span/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/div/form/div/div/span/div/span/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "05319e7e-e28f-4754-9b8f-cbdff5a9c5d8",
+    "name": "Busqueda_Amazon_Variables",
+    "commands": [{
+      "id": "f570d844-b96a-4b1c-92b3-c7bfde8c858d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c53b55e-4e06-456a-8789-03f1022a8745",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox\t",
+      "targets": [],
+      "value": "${producto}"
+    }, {
+      "id": "62c4033b-76ad-4c86-910b-823f34a675ba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='submit' and @value='Go']\t",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3d273fe-674f-43af-b35c-0c1cace97228",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@data-index='1']//h2/a)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2065a3c-1434-431a-8e0d-e298889d85c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button\t",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "833cddbc-9f34-463a-bcd6-287e8e7c0223",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=nav-cart-count\t",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "56677d75-d657-4699-b1c0-a35d382d8830",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.facebook.com/", "https://www.google.com/"],
+  "plugins": []
+}
